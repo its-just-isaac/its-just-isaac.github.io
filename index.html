@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="normalize.css">
@@ -22,11 +26,11 @@
 </head>
 
 <body>
-    <section id="intro" class="text-white w-screen min-h-screen bg-primary pt-8">
+    <section id="intro" class="text-white w-screen min-h-screen bg-primary pt-8 pb-20">
         <div class="section-container">
             <nav id="main-nav" class="flex justify-between">
-                <img src="assets/logo-bold.svg" alt="logo" class="self-center" />
-
+                <!-- <img src="assets/logo-bold.svg" alt="logo" class="self-center" /> -->
+                <h1 class="text-4xl font-bold uppercase" style="font-family: 'Poppins';">Logo</h1>
                 <button class="cursor-pointer">
                     <img src="assets/burger-menu.svg" alt="menu" />
                 </button>
@@ -104,7 +108,12 @@
 
     <section id="solutions" class="section-margin-top">
         <div class="section-container flex flex-col">
-            <img src="assets/multi-icon.svg" title="solutions" class="self-center mb-8 lg:pl-40" />
+            <div class="lg:flex">
+                <div class="lg:w-5/12"></div>
+                <div class="lg:w-7/12">
+                    <img src="assets/multi-icon.svg" title="solutions" class="self-center mb-8" />
+                </div>
+            </div>
             <div class="lg:flex lg:flex-row">
                 <img src="assets/sally.svg" title="sally" class="md:w-1/2 md:mx-auto md:self-center lg:w-5/12" />
                 <div class="flex flex-col my-8 lg:w-7/12">
@@ -127,63 +136,69 @@
         </div>
     </section>
 
-    <section id="features" class="section-margin-top">
-        <div class="section-container text-center flex flex-col">
-            <img src="assets/multi-icon.svg" title="solutions" class="self-center lg:flex-auto lg:mb-8" />
-            <div class="flex flex-col lg:flex-row-reverse lg:flex-row">
-                <img src="assets/phone.svg" alt="phone" class="md:w-1/2 md:mx-auto" />
-                <div>
-                    <h2 class="section-header lg:text-left">Our App Features</h2>
-                    <p class="md:text-center lg:text-left">Cras accumsan pretium dignissim. Curabitur a orci lorem.
-                        Phasellus tempor dolor vel odio efficitur ac sollicitudin.</p>
-                </div>
-            </div>
+    <section id="features" class="section-margin-top flex flex-col lg:overflow-hidden">
+        <div class="section-container">
+            <img src="assets/multi-icon.svg" title="solutions" class="self-center lg:self-start lg:mb-8" />
+        </div>
+        <div class="section-container text-center flex flex-col lg:flex-row relative">
+            <img src="assets/phone.svg" alt="phone" class="md:w-4/6 md:mx-auto lg:absolute lg:-right-40 lg:-top-40" />
 
             <div id="features-wrapper" class="mt-8 lg:mt-0 lg:w-1/2">
+                <h2 class="section-header lg:text-left">Our App Features</h2>
+                <p class="md:text-center lg:text-left leading-8">Cras accumsan pretium dignissim. Curabitur a orci lorem.
+                    Phasellus tempor dolor vel odio efficitur ac sollicitudin.</p>
                 <div class="section-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
-                        <circle id="Ellipse_3" data-name="Ellipse 3" cx="35" cy="35" r="35" fill="#fff4f5" />
-                        <path id="Icon_awesome-bell" data-name="Icon awesome-bell"
-                            d="M13.264,30.317a3.789,3.789,0,0,0,3.788-3.79H9.476A3.789,3.789,0,0,0,13.264,30.317Zm12.754-8.865c-1.144-1.229-3.285-3.078-3.285-9.136a9.351,9.351,0,0,0-7.576-9.187V1.895a1.894,1.894,0,1,0-3.787,0V3.129a9.351,9.351,0,0,0-7.576,9.187c0,6.057-2.141,7.907-3.285,9.136A1.85,1.85,0,0,0,0,22.738a1.9,1.9,0,0,0,1.9,1.895H24.627a1.9,1.9,0,0,0,1.9-1.895,1.849,1.849,0,0,0-.51-1.286Z"
-                            transform="translate(22.116 18.257)" fill="#ff7588" />
-                    </svg>
-                    <h5 class="font-bold text-3xl flex items-center mb-2">
-                        Instant Notifications
-                    </h5>
+                    <div class="flex flex-col items-center lg:flex-row lg:self-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                            <circle id="Ellipse_3" data-name="Ellipse 3" cx="35" cy="35" r="35" fill="#fff4f5" />
+                            <path id="Icon_awesome-bell" data-name="Icon awesome-bell"
+                                d="M13.264,30.317a3.789,3.789,0,0,0,3.788-3.79H9.476A3.789,3.789,0,0,0,13.264,30.317Zm12.754-8.865c-1.144-1.229-3.285-3.078-3.285-9.136a9.351,9.351,0,0,0-7.576-9.187V1.895a1.894,1.894,0,1,0-3.787,0V3.129a9.351,9.351,0,0,0-7.576,9.187c0,6.057-2.141,7.907-3.285,9.136A1.85,1.85,0,0,0,0,22.738a1.9,1.9,0,0,0,1.9,1.895H24.627a1.9,1.9,0,0,0,1.9-1.895,1.849,1.849,0,0,0-.51-1.286Z"
+                                transform="translate(22.116 18.257)" fill="#ff7588" />
+                        </svg>
+                        <h5 class="font-bold text-3xl items-center mb-2">
+                            Instant Notifications
+                        </h5>
+                    </div>
                     <p>Duis vestibulum elit vel neque pharetra vulputate. Quisque Proin
                         scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
                 </div>
 
                 <div class="section-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="69.96" height="69.92" viewBox="0 0 69.96 69.92">
-                        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="34.98" cy="34.96" rx="34.98" ry="34.96"
-                            fill="#f5f4ff" />
-                        <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt"
-                            d="M14.4,16.194A8.1,8.1,0,1,0,6.3,8.1,8.1,8.1,0,0,0,14.4,16.194Zm7.2,1.8h-3.1a9.788,9.788,0,0,1-8.2,0H7.2a7.2,7.2,0,0,0-7.2,7.2v.9a2.7,2.7,0,0,0,2.7,2.7H26.091a2.7,2.7,0,0,0,2.7-2.7v-.9A7.2,7.2,0,0,0,21.593,17.994Z"
-                            transform="translate(20.205 19.66)" fill="#7a65ff" />
-                    </svg>
-                    <h5 class="font-bold text-3xl flex items-center mb-2">
-                        User Friendly
-                    </h5>
+                    <div class="flex flex-col items-center lg:flex-row lg:self-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="69.96" height="69.92" viewBox="0 0 69.96 69.92">
+                            <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="34.98" cy="34.96" rx="34.98" ry="34.96"
+                                fill="#f5f4ff" />
+                            <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt"
+                                d="M14.4,16.194A8.1,8.1,0,1,0,6.3,8.1,8.1,8.1,0,0,0,14.4,16.194Zm7.2,1.8h-3.1a9.788,9.788,0,0,1-8.2,0H7.2a7.2,7.2,0,0,0-7.2,7.2v.9a2.7,2.7,0,0,0,2.7,2.7H26.091a2.7,2.7,0,0,0,2.7-2.7v-.9A7.2,7.2,0,0,0,21.593,17.994Z"
+                                transform="translate(20.205 19.66)" fill="#7a65ff" />
+                        </svg>
+                        <h5 class="font-bold text-3xl flex items-center mb-2">
+                            User Friendly
+                        </h5>
+                    </div>
+
                     <p>Duis vestibulum elit vel neque pharetra vulputate. Quisque Proin
                         scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
                 </div>
 
                 <div class="section-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="69.94" height="69.9" viewBox="0 0 69.94 69.9">
-                        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="34.97" cy="34.95" rx="34.97" ry="34.95"
-                            fill="#fff6f3" />
-                        <g id="Icon_ionic-md-thumbs-up" data-name="Icon ionic-md-thumbs-up"
-                            transform="translate(16.984 16.95)">
-                            <path id="Path_1" data-name="Path 1"
-                                d="M13.922,31.5H26.016a2.58,2.58,0,0,0,2.4-1.645l4.015-9.52a2.691,2.691,0,0,0,.183-.984V16.636c0-1.484-1.2-3.136-2.658-3.136H21.579l1.266-5.73.042-.422A2.038,2.038,0,0,0,22.3,5.92L20.883,4.5l-8.859,8.951a2.707,2.707,0,0,0-.773,1.905v13.5A2.651,2.651,0,0,0,13.922,31.5Z"
-                                fill="#ffaa8f" />
-                            <path id="Path_2" data-name="Path 2" d="M3.375,15.75h4.5V31.5h-4.5Z" fill="#ffaa8f" />
-                        </g>
-                    </svg>
-                    <h5 class="font-bold text-3xl flex items-center mb-2">
-                        Secure & Reliable
-                    </h5>
+                    <div class="flex flex-col items-center lg:flex-row lg:self-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="69.94" height="69.9" viewBox="0 0 69.94 69.9">
+                            <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="34.97" cy="34.95" rx="34.97" ry="34.95"
+                                fill="#fff6f3" />
+                            <g id="Icon_ionic-md-thumbs-up" data-name="Icon ionic-md-thumbs-up"
+                                transform="translate(16.984 16.95)">
+                                <path id="Path_1" data-name="Path 1"
+                                    d="M13.922,31.5H26.016a2.58,2.58,0,0,0,2.4-1.645l4.015-9.52a2.691,2.691,0,0,0,.183-.984V16.636c0-1.484-1.2-3.136-2.658-3.136H21.579l1.266-5.73.042-.422A2.038,2.038,0,0,0,22.3,5.92L20.883,4.5l-8.859,8.951a2.707,2.707,0,0,0-.773,1.905v13.5A2.651,2.651,0,0,0,13.922,31.5Z"
+                                    fill="#ffaa8f" />
+                                <path id="Path_2" data-name="Path 2" d="M3.375,15.75h4.5V31.5h-4.5Z" fill="#ffaa8f" />
+                            </g>
+                        </svg>
+                        <h5 class="font-bold text-3xl flex items-center mb-2">
+                            Secure & Reliable
+                        </h5>
+                    </div>
+
                     <p>Duis vestibulum elit vel neque pharetra vulputate. Quisque Proin
                         scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
                 </div>
@@ -208,48 +223,50 @@
 
     <section id="question" class="section-margin-top">
         <div class="section-container flex flex-col items-center">
-            <img src="assets/circular-question.svg" class="mb-8" alt="question logo" />
+            <img src="assets/circular-question.svg" class="lg:mb-8 lg:self-start lg:w-1/12" alt="question logo" />
 
-            <div class="mb-8 lg:absolute lg:w-1/2 lg:r-0">
-                <img src="assets/document.svg" alt="document image" class="m-auto w-1/2 md:w-1/3" />
+            <div class="mb-8 lg:absolute lg:w-3/4">
+                <img src="assets/document.svg" alt="document image" class="m-auto w-1/2 md:w-1/3 lg:mr-0 lg:mt-60" />
             </div>
 
-            <div class="list-wrapper">
+            <div class="list-wrapper lg:w-1/2 self-start">
                 <div class="mb-4">
-                    <h2 class="section-header text-center">
+                    <h2 class="section-header text-center lg:text-left">
                         Have any Question?
                     </h2>
-                    <p class="section-paragraph text-center leading-6">
+                    <p class="section-paragraph text-center leading-6 lg:text-left">
                         Cras accumsan pretium dignissim. Curabitur a orci lorem.
                         Phasellus tempor dolor vel odio efficitur ac sollicitudin.
                     </p>
                 </div>
 
                 <div class="mb-4">
-                    <h3 class="section-header text-primary text-center">
+                    <h4 class="section-header text-primary text-center lg:text-left">
                         How can I install the App?
-                    </h3>
-                    <p class="font-light text-center leading-8">Duis vestibulum elit vel neque pharetra
+                    </h4>
+                    <p class="font-light text-center leading-6 lg:text-left lg:mt-2">Duis vestibulum elit vel neque pharetra
                         vulputate.<br />Quisque
                         Proin
                         scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
                 </div>
 
                 <div class="mb-4">
-                    <h3 class="section-header text-primary text-center lg:mb-4">
+                    <h4 class="section-header text-primary text-center lg:text-left">
                         What is the Main Features of this App?
-                    </h3>
-                    <p class="font-light text-center leading-8">Duis vestibulum elit vel neque pharetra vulputate.<br />
+                    </h4>
+                    <p class="font-light text-center leading-6 lg:text-left lg:mt-2">Duis vestibulum elit vel neque pharetra
+                        vulputate.<br />
                         Quisque
                         Proin
                         scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
                 </div>
 
                 <div class="mb-4">
-                    <h3 class="section-header text-primary text-center">
+                    <h4 class="section-header text-primary text-center lg:text-left">
                         Is there any Video Sessions?
-                    </h3>
-                    <p class="font-light text-center leading-8">Duis vestibulum elit vel neque pharetra vulputate.<br />
+                    </h4>
+                    <p class="font-light text-center leading-6 lg:text-left lg:mt-2">Duis vestibulum elit vel neque pharetra
+                        vulputate.<br />
                         Quisque
                         Proin
                         scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
@@ -260,7 +277,8 @@
     </section>
 
     <section id="statistics" class="section-margin-top">
-        <div class="section-container flex flex-col bg-primary text-white justify-around text-center py-32 rounded-xl lg:flex-row lg:pb-10">
+        <div
+            class="section-container flex flex-col bg-primary text-white justify-around text-center py-32 rounded-xl lg:flex-row lg:pb-10">
             <div class="statistic-data">
                 <h4>12M+</h4>
                 <div>Downloads</div>

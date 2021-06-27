@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  transition: .25s ease-in-out
+  padding: 0
 }
 body {
-  font-family: Roboto,sans-serif
+  font-family: Poppins,sans-serif;
+  overflow-x: hidden
 }
 .text-primary {
   color: #ff4363
@@ -44,19 +44,10 @@ body {
   padding: 1rem 2rem
 }
 h1.section-header {
+  line-height: 5rem!important;
   font-weight: 700;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 4.5rem;
   margin-bottom: 2rem
-}
-@media (min-width:1024px) {
-  h1.section-header {
-    font-size: 4.5rem;
-    line-height: 1
-  }
-  div.section-container {
-    width: 100%
-  }
 }
 h2.section-header {
   font-weight: 700;
@@ -162,35 +153,11 @@ section#showcase .card {
   padding: 2rem;
   text-align: center
 }
-@media (min-width:1024px) {
-  div.section-container {
-    padding-left: 7rem;
-    padding-right: 7rem
-  }
-  .section-margin-top {
-    margin-top: 10rem
-  }
-  section#showcase .card {
-    padding: 3.5rem 3rem
-  }
-}
-section#showcase .card:nth-child(2) {
-  margin-left: 2rem;
-  margin-right: 2rem
-}
 section#showcase .card > svg {
   margin: auto
 }
 section#showcase .card > p {
   font-weight: 300
-}
-@media (min-width:768px) {
-  section#showcase .card > p {
-    line-height: 2.5rem
-  }
-  section#features > div .section-item svg {
-    margin-right: 1rem
-  }
 }
 section#solutions > div#card-wrapper {
   display: -webkit-box;
@@ -208,12 +175,41 @@ section#features > div .section-item {
   flex-direction: column;
   align-items: center;
   font-weight: 300;
-  line-height: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem
+}
+@media (min-width:1024px) {
+  div.section-container {
+    width: 100%;
+    padding-left: 7rem;
+    padding-right: 7rem
+  }
+  .section-margin-top {
+    margin-top: 7rem
+  }
+  section#showcase .card {
+    padding: 3.5rem 3rem
+  }
+  section#showcase .card:nth-child(2) {
+    margin-left: 2rem;
+    margin-right: 2rem
+  }
+  section#features > div .section-item {
+    justify-self: start;
+    text-align: left
+  }
 }
 section#features > div .section-item svg {
   margin-bottom: 1rem
+}
+@media (min-width:768px) {
+  section#showcase .card > p {
+    line-height: 1.5rem
+  }
+  section#features > div .section-item svg {
+    margin-right: 1rem
+  }
 }
 section#statistics .section-container > .statistic-data {
   margin-bottom: 5rem

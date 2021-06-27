@@ -1,5 +1,5 @@
 $primary-color: #FF4363;
-$primary-font-family: 'Roboto',
+$primary-font-family: 'Poppins',
 sans-serif;
 
 /* reset */
@@ -10,11 +10,12 @@ sans-serif;
     padding: 0;
 
     /* just for fun */
-    transition: all .25s ease-in-out;
+    /*transition: all .25s ease-in-out;*/
 }
 
 body {
     font-family: $primary-font-family;
+    overflow-x: hidden;
 }
 
 /* general */
@@ -42,10 +43,9 @@ body {
 }
 
 h1.section-header {
+    line-height: 5rem !important;
     /* beautify ignore:start */
-    @apply font-bold mb-8
-    text-5xl
-    lg:text-7xl;
+    @apply font-bold mb-8 text-7xl;
     /* beautify ignore:end */
 }
 
@@ -79,7 +79,7 @@ div.section-container {
 .section-margin-top {
     @apply mt-16
     md:mt-20
-    lg:mt-40;
+    lg:mt-28;
 }
 /* beautify ignore:end */
 
@@ -100,7 +100,7 @@ section#showcase {
         /* beautify ignore:end */
 
         &:nth-child(2) {
-            @apply mx-8;
+            @apply lg:mx-8;
         }
 
         >svg {
@@ -110,7 +110,7 @@ section#showcase {
         >p {
             /* beautify ignore:start */
             @apply font-light
-            md:leading-10;
+            md:leading-6;
             /* beautify ignore:end */
         }
     }
@@ -127,7 +127,8 @@ section#solutions>div#card-wrapper {
 section#features>div {
     /* beautify ignore:start */
     .section-item {
-        @apply flex flex-col font-light items-center leading-8 my-4;
+        @apply flex flex-col font-light items-center leading-6 my-8
+        lg:justify-self-start lg:text-left;
 
         svg {
             @apply mb-4
