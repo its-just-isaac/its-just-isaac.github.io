@@ -1,0 +1,146 @@
+$primary-color: #FF4363;
+$primary-font-family: 'Roboto',
+sans-serif;
+
+/* reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* just for fun */
+    transition: all .25s ease-in-out;
+}
+
+body {
+    font-family: $primary-font-family;
+}
+
+/* general */
+
+.text-primary {
+    color: $primary-color;
+}
+
+.bg-primary {
+    background-color: $primary-color;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    @apply text-2xl text-white font-semibold cursor-pointer border-0 rounded-full px-8 py-4;
+}
+
+.btn-link {
+    @apply text-2xl font-semibold cursor-pointer;
+}
+
+.btn-primary-alt {
+    color: $primary-color;
+    @apply bg-white text-2xl font-semibold cursor-pointer border-0 rounded-full px-8 py-4;
+}
+
+h1.section-header {
+    /* beautify ignore:start */
+    @apply font-bold mb-8
+    text-5xl
+    lg:text-7xl;
+    /* beautify ignore:end */
+}
+
+h2.section-header {
+    @apply text-5xl font-bold mb-8;
+}
+
+h3.section-header {
+    @apply font-semibold text-4xl;
+}
+
+h4.section-header {
+    @apply font-semibold text-2xl;
+}
+
+p.section-paragraph {
+    @apply font-light;
+}
+
+div.section-container {
+    /* beautify ignore:start */
+    @apply 
+    px-5
+    md:container md:px-20
+    lg:container lg:px-28
+    mx-auto;
+    /* beautify ignore:end */
+}
+
+/* beautify ignore:start */
+.section-margin-top {
+    @apply mt-16
+    md:mt-20
+    lg:mt-40;
+}
+/* beautify ignore:end */
+
+/* custom */
+
+section#showcase {
+    #card-wrapper {
+        /* beautify ignore:start */
+        @apply md:flex-row;
+        /* beautify ignore:end */
+    }
+
+    .card {
+        box-shadow: -1px 1px 72px 0px rgba(219, 219, 219, 0.75);
+        /* beautify ignore:start */
+        @apply flex flex-col rounded-xl text-center p-8 mt-8
+            lg:px-12 lg:py-14;
+        /* beautify ignore:end */
+
+        &:nth-child(2) {
+            @apply mx-8;
+        }
+
+        >svg {
+            margin: auto;
+        }
+
+        >p {
+            /* beautify ignore:start */
+            @apply font-light
+            md:leading-10;
+            /* beautify ignore:end */
+        }
+    }
+}
+
+section#solutions>div#card-wrapper {
+    @apply flex flex-col;
+
+    >img:first-child {
+        margin: auto;
+    }
+}
+
+section#features>div {
+    /* beautify ignore:start */
+    .section-item {
+        @apply flex flex-col font-light items-center leading-8 my-4;
+
+        svg {
+            @apply mb-4
+            md:mr-4;
+        }
+    }
+    /* beautify ignore:end */
+}
+
+section#statistics .section-container>.statistic-data {
+    @apply mb-20;
+
+    h4 {
+        @apply text-7xl font-bold mb-4;
+    }
+}

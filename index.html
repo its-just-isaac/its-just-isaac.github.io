@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="intro" class="text-white w-screen min-h-screen bg-primary pt-8">
+        <div class="section-container">
+            <nav id="main-nav" class="flex justify-between">
+                <img src="assets/logo-bold.svg" alt="logo" class="self-center" />
+
+                <button class="cursor-pointer">
+                    <img src="assets/burger-menu.svg" alt="menu" />
+                </button>
+            </nav>
+
+            <div class="w-full flex flex-col lg:flex-row">
+                <div id="headline-wrapper" class="flex flex-col justify-center lg:w-1/2 z-20">
+                    <div>
+                        <h1 class="section-header">Download Our App and enjoy!</h1>
+                        <p class="section-paragraph text-lg leading-8 mb-12">Contrary to popular belief, Lorem Ipsum is
+                            not
+                            simply randa
+                            text. has
+                            roots in a piece of classical Latin literature from BC, making it over
+                            2000 years old. Richard McClintock.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col justify-center lg:flex-row lg:items-center lg:justify-start">
+                        <button class="btn-primary-alt mb-8 lg:mb-0 lg:mr-8">Download App</button>
+                        <button class="btn-link text-white ml-0"><i class="fa fa-play mr-2"></i>
+                            Watch Video</button>
+                    </div>
+                </div>
+                <div class="lg:absolute lg:right-0 lg:bottom-0 lg:w-7/12 z-10">
+                    <img src="assets/ar-dummy.svg" class="w-screen" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="showcase" class="section-margin-top">
+        <div id="card-wrapper" class="section-container lg:flex">
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="35" cy="35" r="35" fill="#fff4f5" />
+                    <path id="Icon_awesome-drafting-compass" data-name="Icon awesome-drafting-compass"
+                        d="M28.474,21.459a19.739,19.739,0,0,1-5.143,3.056l3.388,5.868,3.361,1.435a1,1,0,0,0,1.381-.8l.437-3.629-3.426-5.933Zm2.647-5.892a1,1,0,0,0-.377-1.4L29,13.2a1,1,0,0,0-1.325.356A13.97,13.97,0,0,1,15.95,19.938a13.854,13.854,0,0,1-4.325-.718l4.2-7.27c.044,0,.083.013.127.013s.084-.012.127-.013l3.183,5.514a11.868,11.868,0,0,0,5.147-3.048L21.18,8.826a5.9,5.9,0,0,0,.751-2.845,5.981,5.981,0,0,0-11.963,0,5.91,5.91,0,0,0,.751,2.845L6.464,16.2a13.93,13.93,0,0,1-2.1-2.43,1,1,0,0,0-1.332-.332l-1.729,1a1,1,0,0,0-.351,1.4A17.877,17.877,0,0,0,4.441,19.7L0,27.393l.437,3.629a1,1,0,0,0,1.381.8L5.18,30.384l4.411-7.64a17.884,17.884,0,0,0,6.359,1.181A17.97,17.97,0,0,0,31.121,15.567ZM15.95,3.988a1.994,1.994,0,1,1-1.994,1.994A1.994,1.994,0,0,1,15.95,3.988Z"
+                        transform="translate(19 17)" fill="#ff7588" />
+                </svg>
+                <h4 class="section-header my-4">Awesome Design</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis non rem ab optio deserunt ipsum porro
+                    quia nesciunt.
+                </p>
+            </div>
+
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="35" cy="35" r="35" fill="#f5f4ff" />
+                    <path id="Icon_awesome-edit" data-name="Icon awesome-edit"
+                        d="M25.948,5.363l5.814,5.814a.63.63,0,0,1,0,.889L17.685,26.142l-5.981.664a1.254,1.254,0,0,1-1.386-1.386l.664-5.981L25.059,5.363A.63.63,0,0,1,25.948,5.363ZM36.389,3.887,33.244.742a2.521,2.521,0,0,0-3.558,0L27.4,3.023a.63.63,0,0,0,0,.889l5.814,5.814a.63.63,0,0,0,.889,0l2.282-2.282a2.521,2.521,0,0,0,0-3.558ZM24.749,22.314v6.561H4.125V8.25H18.936a.792.792,0,0,0,.548-.226l2.578-2.578a.773.773,0,0,0-.548-1.321H3.094A3.094,3.094,0,0,0,0,7.219V29.906A3.094,3.094,0,0,0,3.094,33H25.781a3.094,3.094,0,0,0,3.094-3.094V19.736a.775.775,0,0,0-1.321-.548l-2.578,2.578A.792.792,0,0,0,24.749,22.314Z"
+                        transform="translate(17.126 18)" fill="#7a65ff" />
+                </svg>
+                <h4 class="section-header my-4">Easy to Edit</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis non rem ab optio deserunt ipsum porro
+                    quia nesciunt.
+                </p>
+            </div>
+
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                    <circle id="Ellipse_1" data-name="Ellipse 1" cx="35" cy="35" r="35" fill="#fff6f3" />
+                    <path id="Icon_material-security" data-name="Icon material-security"
+                        d="M18,1.5,4.5,7.5v9c0,8.325,5.76,16.11,13.5,18,7.74-1.89,13.5-9.675,13.5-18v-9Zm0,16.485H28.5C27.7,24.165,23.58,29.67,18,31.4V18H7.5V9.45L18,4.785Z"
+                        transform="translate(17.5 17.5)" fill="#ffaa8f" />
+                </svg>
+                <h4 class="section-header my-4">Fully Secured</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis non rem ab optio deserunt ipsum porro
+                    quia nesciunt.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="section-margin-top">
+        <div class="section-container flex flex-col">
+            <img src="assets/multi-icon.svg" title="solutions" class="self-center mb-8 lg:pl-40" />
+            <div class="lg:flex lg:flex-row">
+                <img src="assets/sally.svg" title="sally" class="md:w-1/2 md:mx-auto md:self-center lg:w-5/12" />
+                <div class="flex flex-col my-8 lg:w-7/12">
+                    <div class="ml-8">
+                        <h2 class="section-header md:text-center lg:text-left">We Designed Perfect App for You</h2>
+                        <p class="text-lg md:text-center lg:text-left">In consequat, quam id sodales hendrerit, eros mi
+                            molestie leo
+                            an
+                            lacinia risus neque tristique augue. Proin tempus urna vel congue
+                            elementum. Vestibulum euismod accumsan.</p>
+                        <ul class="list-disc list-inside mt-8 md:text-center lg:text-left">
+                            <li class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-primary self-center mt-8">Learn More</button>
+        </div>
+    </section>
+
+    <section id="features" class="section-margin-top">
+        <div class="section-container text-center flex flex-col">
+            <img src="assets/multi-icon.svg" title="solutions" class="self-center lg:flex-auto lg:mb-8" />
+            <div class="flex flex-col lg:flex-row-reverse lg:flex-row">
+                <img src="assets/phone.svg" alt="phone" class="md:w-1/2 md:mx-auto" />
+                <div>
+                    <h2 class="section-header lg:text-left">Our App Features</h2>
+                    <p class="md:text-center lg:text-left">Cras accumsan pretium dignissim. Curabitur a orci lorem.
+                        Phasellus tempor dolor vel odio efficitur ac sollicitudin.</p>
+                </div>
+            </div>
+
+            <div id="features-wrapper" class="mt-8 lg:mt-0 lg:w-1/2">
+                <div class="section-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                        <circle id="Ellipse_3" data-name="Ellipse 3" cx="35" cy="35" r="35" fill="#fff4f5" />
+                        <path id="Icon_awesome-bell" data-name="Icon awesome-bell"
+                            d="M13.264,30.317a3.789,3.789,0,0,0,3.788-3.79H9.476A3.789,3.789,0,0,0,13.264,30.317Zm12.754-8.865c-1.144-1.229-3.285-3.078-3.285-9.136a9.351,9.351,0,0,0-7.576-9.187V1.895a1.894,1.894,0,1,0-3.787,0V3.129a9.351,9.351,0,0,0-7.576,9.187c0,6.057-2.141,7.907-3.285,9.136A1.85,1.85,0,0,0,0,22.738a1.9,1.9,0,0,0,1.9,1.895H24.627a1.9,1.9,0,0,0,1.9-1.895,1.849,1.849,0,0,0-.51-1.286Z"
+                            transform="translate(22.116 18.257)" fill="#ff7588" />
+                    </svg>
+                    <h5 class="font-bold text-3xl flex items-center mb-2">
+                        Instant Notifications
+                    </h5>
+                    <p>Duis vestibulum elit vel neque pharetra vulputate. Quisque Proin
+                        scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
+                </div>
+
+                <div class="section-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="69.96" height="69.92" viewBox="0 0 69.96 69.92">
+                        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="34.98" cy="34.96" rx="34.98" ry="34.96"
+                            fill="#f5f4ff" />
+                        <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt"
+                            d="M14.4,16.194A8.1,8.1,0,1,0,6.3,8.1,8.1,8.1,0,0,0,14.4,16.194Zm7.2,1.8h-3.1a9.788,9.788,0,0,1-8.2,0H7.2a7.2,7.2,0,0,0-7.2,7.2v.9a2.7,2.7,0,0,0,2.7,2.7H26.091a2.7,2.7,0,0,0,2.7-2.7v-.9A7.2,7.2,0,0,0,21.593,17.994Z"
+                            transform="translate(20.205 19.66)" fill="#7a65ff" />
+                    </svg>
+                    <h5 class="font-bold text-3xl flex items-center mb-2">
+                        User Friendly
+                    </h5>
+                    <p>Duis vestibulum elit vel neque pharetra vulputate. Quisque Proin
+                        scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
+                </div>
+
+                <div class="section-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="69.94" height="69.9" viewBox="0 0 69.94 69.9">
+                        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="34.97" cy="34.95" rx="34.97" ry="34.95"
+                            fill="#fff6f3" />
+                        <g id="Icon_ionic-md-thumbs-up" data-name="Icon ionic-md-thumbs-up"
+                            transform="translate(16.984 16.95)">
+                            <path id="Path_1" data-name="Path 1"
+                                d="M13.922,31.5H26.016a2.58,2.58,0,0,0,2.4-1.645l4.015-9.52a2.691,2.691,0,0,0,.183-.984V16.636c0-1.484-1.2-3.136-2.658-3.136H21.579l1.266-5.73.042-.422A2.038,2.038,0,0,0,22.3,5.92L20.883,4.5l-8.859,8.951a2.707,2.707,0,0,0-.773,1.905v13.5A2.651,2.651,0,0,0,13.922,31.5Z"
+                                fill="#ffaa8f" />
+                            <path id="Path_2" data-name="Path 2" d="M3.375,15.75h4.5V31.5h-4.5Z" fill="#ffaa8f" />
+                        </g>
+                    </svg>
+                    <h5 class="font-bold text-3xl flex items-center mb-2">
+                        Secure & Reliable
+                    </h5>
+                    <p>Duis vestibulum elit vel neque pharetra vulputate. Quisque Proin
+                        scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn-more" class="section-margin-top bg-primary text-white">
+        <div class="section-container flex flex-col items-center pb-8 lg:flex-row">
+            <div class="md:w-1/2 sm:w-screen">
+                <img src="assets/hand-phone.svg" />
+            </div>
+            <div class="flex flex-col lg:w-1/2 mt-8">
+                <h2 class="section-header text-center mb-8 lg:text-left">Get Your App for Next Way.</h2>
+                <p>In consequat, quam id sodales hendrerit, eros mi molestie leo an
+                    lacinia risus neque tristique augue. Proin tempus urna vel congue
+                    elementum. Vestibulum euismod accumsan.</p>
+                <button class="mt-8 btn-primary-alt self-center lg:self-start">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="question" class="section-margin-top">
+        <div class="section-container flex flex-col items-center">
+            <img src="assets/circular-question.svg" class="mb-8" alt="question logo" />
+
+            <div class="mb-8 lg:absolute lg:w-1/2 lg:r-0">
+                <img src="assets/document.svg" alt="document image" class="m-auto w-1/2 md:w-1/3" />
+            </div>
+
+            <div class="list-wrapper">
+                <div class="mb-4">
+                    <h2 class="section-header text-center">
+                        Have any Question?
+                    </h2>
+                    <p class="section-paragraph text-center leading-6">
+                        Cras accumsan pretium dignissim. Curabitur a orci lorem.
+                        Phasellus tempor dolor vel odio efficitur ac sollicitudin.
+                    </p>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="section-header text-primary text-center">
+                        How can I install the App?
+                    </h3>
+                    <p class="font-light text-center leading-8">Duis vestibulum elit vel neque pharetra
+                        vulputate.<br />Quisque
+                        Proin
+                        scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="section-header text-primary text-center lg:mb-4">
+                        What is the Main Features of this App?
+                    </h3>
+                    <p class="font-light text-center leading-8">Duis vestibulum elit vel neque pharetra vulputate.<br />
+                        Quisque
+                        Proin
+                        scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="section-header text-primary text-center">
+                        Is there any Video Sessions?
+                    </h3>
+                    <p class="font-light text-center leading-8">Duis vestibulum elit vel neque pharetra vulputate.<br />
+                        Quisque
+                        Proin
+                        scelerisque nisi urna. Duis rutrum non risus in imperdiet.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="statistics" class="section-margin-top">
+        <div class="section-container flex flex-col bg-primary text-white justify-around text-center py-32 rounded-xl lg:flex-row lg:pb-10">
+            <div class="statistic-data">
+                <h4>12M+</h4>
+                <div>Downloads</div>
+            </div>
+            <div class="statistic-data">
+                <h4>18M+</h4>
+                <div>Active Users</div>
+            </div>
+            <div class="statistic-data">
+                <h4>4.9</h4>
+                <div>Ratings</div>
+            </div>
+            <div class="statistic-data">
+                <h4 class="text-5xl font-bold">300M+</h4>
+                <div>Happy Clients</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="section-margin-top">
+        <div class="section-container mx-auto px-4 flex flex-col text-center">
+            <h2 class="section-header">Still Not Lucky?</h2>
+            <p class="m-auto section-paragraph text-lg lg:w-1/2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard.
+            </p>
+            <button class="mt-8 btn-primary self-center">Contact Us</button>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="section-margin-top bg-black text-white py-8">
+        <div class="section-container flex flex-col justify-between lg:flex-row">
+            <ul class="inline flex flex-col items-center mb-10 lg:mb-0 lg:flex-row lg:justify-center">
+                <li class="mb-4 lg:mb-0 lg:mr-2"><a href="#">Facebook</a></li>
+                <li class="mb-4 lg:mb-0 lg:mr-2"><a href="#">Twitter</a></li>
+                <li class="mb-4 lg:mb-0 lg:mr-2"><a href="#">YouTube</a></li>
+                <li class="mb-4 lg:mb-0 lg:mr-2"><a href="#">Instagram</a></li>
+                <li class="mb-4 lg:mb-0 lg:mr-2"><a href="#">Behance</a></li>
+            </ul>
+
+            <small class="self-center">&copy; 2021 Copyrights & Protected</small>
+        </div>
+    </footer>
+</body>
+
+</html>
